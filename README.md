@@ -1,2 +1,2 @@
 # Challenge-4
-JavaScript-Console Finances 
+JavaScript - Console Finances 
