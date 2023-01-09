@@ -1,6 +1,9 @@
 # Challenge-4
 JavaScript - Console Finances 
 
+
+![Screenshot of the data analysis](assets/Capture.PNG)
+
 ##Description:
 
 The aim of this project was to carry out data analysis using JavaScript and produce a summary report of the data.
