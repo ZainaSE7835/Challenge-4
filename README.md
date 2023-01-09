@@ -2,6 +2,8 @@
 JavaScript - Console Finances 
 
 
+
+
 ![Screenshot of the data analysis](assets/Capture.PNG)
 
 ##Description:
