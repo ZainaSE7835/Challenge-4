@@ -125,22 +125,50 @@ averageChange = totalChange/(finances.length -1);
 
 console.log("Average change: $" + averageChange.toFixed(2))
 
-//The greatest increase in profits over entire period//
+//Greatest increase in profits over entire period//
+
+greatestIncrease = changes.reduce( (acc, val ) => {
+    return acc > val ? acc:val;
+});
+
+greatestIncreaseMonthIndex = changes.indexOf(greatestIncrease) +1;
+greatestIncreaseMonth = finances[greatestIncreaseMonthIndex][0];
+
+console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + "($" + greatestIncrease +")")
+
+//Greatest decrease in profits over entire period//
+
+greatestDecrease = changes.reduce( (acc, val ) => {
+    return acc < val ? acc:val;
+});
+
+greatestDecreaseMonthIndex = changes.indexOf(greatestDecrease) +1;
+greatestDecreaseMonth = finances[greatestDecreaseMonthIndex][0];
+
+console.log("Greatest Decrease in Profits: " + greatestDecreaseMonth + "($" + greatestDecrease +")")
 
 
+//Practice Exercise (please ignore)//
 
-//Practice Exercise (ignore)//
+/*Finding max and min values in an array
+
 let array =[19, 59, 3, 48, 1];
 let max = array.reduce( (acc, val ) => {
     return acc > val ? acc:val;
 });
+
 
 let min = array.reduce( (acc, val ) => {
     return acc < val ? acc:val;
 });
 
 console.log("max", max);
-console.log("min", min)
+console.log("min", min)*/
 
 
+/*indexOf function
 
+let Name = "Zainab Sebbar";
+
+let letter = Name.indexOf("e")
+console.log(letter)*/
